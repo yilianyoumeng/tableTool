@@ -1,0 +1,223 @@
+body,
+button,
+input {
+    font-family: PingFangSC-Regular, Verdana, Arial, '微软雅黑', '宋体';
+}
+
+.content {
+    width: 100%;
+}
+
+button {
+    width: 80px;
+    height: 25px;
+    color: #fff;
+    letter-spacing: 1px;
+    background: #31bb96;
+    border-bottom: 1px solid #31bb96;
+    outline: medium;
+    *border-bottom: 0;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.bigBtn {
+    width: 150px;
+    height: 35px;
+    font-size: 14px;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99;
+}
+.menu .setTable div{
+    display: inline-block;
+    padding:5px 20px;
+    border:1px solid #31bb96;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color:#31bb96;
+    cursor: pointer;
+}
+.uploadBgBox {
+    position: relative;
+    width: 300px;
+    height: 24px;
+    font-size: 14px;
+}
+
+.uploadBgInp {
+    -webkit-appearance: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.uploadBgBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+#area {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.tan {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 110;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.tanInfo {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    height: 250px;
+    background-color: #fff;
+    margin: auto;
+    z-index: 9999;
+}
+
+.link {
+    display: block;
+    position: absolute;
+    border: 1px dashed blue;
+    width: 0px;
+    height: 0px;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.retc {
+    display: block;
+    position: absolute;
+    border: 1px solid #CCCCCC;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.dn {
+    display: none !important;
+}
+
+.db {
+    display: block !important;
+}
+
+.setTableBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+}
+
+table,
+table tr th,
+table tr td {
+    border: 1px solid #000;
+    height: 25px;
+    min-width: 30px;
+}
+
+table {
+    width: 200px;
+    min-height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 2px;
+}
+
+input {
+    border: none;
+    padding: 0 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.tanInfo .tit {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #31bb96;
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tanInfoItem {
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.tanInfoItem input[type="text"] {
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.tanInfoItem button {
+    margin-left: 10px;
+}
+
+.tanInfo input[type='text'] {
+    border: 1px solid #999;
+}
+
+.tanInfo .tit .closeBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 0;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    transform: scale(1, 0.83);
+}

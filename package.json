@@ -1,0 +1,31 @@
+{
+  "name": "tableTool",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . tableTool --win --out ../tableTool --arch=x64 --app-version=0.0.1 --overwrite --electron-version=1.8.2"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "yilianyoumeng <1329395802@qq.com>",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.8.2-beta5",
+    "electron-dl": "^1.10.0",
+    "fs": "^0.0.1-security",
+    "jquery": "^3.4.1",
+    "utf8": "^3.0.0"
+  },
+  "dependencies": {
+    "electron-dl": "^1.7.0",
+    "handsontable": "^7.1.1",
+    "ipc": "0.0.1"
+  }
+}

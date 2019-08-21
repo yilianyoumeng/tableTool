@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>tableTool</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+      if (typeof module === 'object') {
+          window.jQuery = window.$ = module.exports;
+      };
+    </script>
+    <script src="assets/js/handsontable.full.min.js"></script>
+    <link href="assets/css/handsontable.full.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div>
+      <div class="content">
+        <!--页面内容部分-->
+        <div id="area" class="area">
+            <div id="example"></div>
+        </div>
+        <div id="area2">
+
+        </div>
+      </div>
+      <!--菜单-->
+      <div class="menu">
+        <ul>
+          <li class="setTable">
+            <div id="preview">预览</div>
+            <div id="buildFile">下载</div>
+          </li>
+        </ul>
+      </div>
+      <!--下载地址设置-->
+      <div class="tan dn" id="tanDownLoad">
+          <div class="tanInfo">
+              <div class="tit">下载 <div class="closeBtn">X</div></div>
+              <div class="tanInfoItem">文件名：<input type="text" id="folderName" placeholder="保存的文件名"></div>
+              <div class="tanInfoItem">选择文件夹：<input type="text" id="download-to" disabled style="width:100px;"><button id="choose-folder">选择文件夹</button></div>
+              <button class="bigBtn" id="download-btn">下载</button>
+          </div>
+      </div>
+    </div>
+    <script>      
+      require('./setTable.js')
+      require('./downloan.js')
+    </script>
+  </body>
+</html>
