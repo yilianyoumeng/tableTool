@@ -4,8 +4,7 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "pack": "electron-packager . tableTool --win --out ../tableTool --arch=x64 --app-version=0.0.1 --overwrite --electron-version=1.8.2"
+    "start": "electron ."
   },
   "keywords": [
     "Electron",

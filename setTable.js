@@ -25,6 +25,16 @@ const hot = new Handsontable(container, {
 //预览
 jQuery('#preview').click(function(){
     jQuery('#area2').html('');
+    var colgroupHtml=jQuery('.ht_master .htCore colgroup').html();
+    colgroupHtml=colgroupHtml.split('>');
+    console.log(colgroupHtml)
+    var colgroupHtmlNew='';
+    for(let i=1;i<colgroupHtml.length-1;i++){
+        colgroupHtmlNew=colgroupHtmlNew+colgroupHtml[i]+'>';
+    }
+    console.log(colgroupHtmlNew);
+    colgroupHtmlNew='<colgroup>'+colgroupHtmlNew+'</colgroup>';
+
     //去除表头
     var tableHtml=jQuery('.ht_master .htCore tbody').html();
     var colHeaderLength=(tableHtml.split('</th>')).length-1;//有多少个colHeader
@@ -34,7 +44,7 @@ jQuery('#preview').click(function(){
     }   
     //在td内加<input>
     tableHtml=tableHtml.replace(/><\/td>/g,'><input type="text" ></td>');
-    jQuery('#area2').append('<table>'+tableHtml+'</table>');
+    jQuery('#area2').append('<table>'+colgroupHtmlNew+tableHtml+'</table>');
     
 })
 //下载
